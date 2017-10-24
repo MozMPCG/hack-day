@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #282e3a;
+    color: #fff;    
+}
+.hero{
+    height: 100vh;
+    background: url('back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.overlay{
+    padding: 0 10px;
+    position: relative;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: honeydew;
+    font-size: 23px; 
+}
+.overlay h1{
+    font-weight: 100;
+}
+#heading{
+    margin-top: 120px;
+    font-size: 62px;
+}
+#hackathon{
+    margin-top: 10px;
+    font-size: 42px;
+    letter-spacing: 5px;
+    color: yellow;
+}
+i{
+    margin-top: 10px;
+}
+i:hover{
+    color: yellow;
+    cursor: pointer;
+}
+
+#organised{
+    margin-top: 10px;
+    padding: 10px;
+    width: 350px;
+    height: 15vh;
+    background-color: transparent;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.yellow{
+    color: yellow;
+}
+.webVR{
+    color: #282e3a;
+    margin: 0 auto;
+    padding: 3.5% 1%;
+    border-radius: 5px;
+    width: 99%;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.webVR p{
+    color: black;
+    font-weight: 400;
+}
+
+ul li{
+    color: #fff;
+    list-style: none;
+}
+a{
+    color: #fff;
+}
+p{
+    color: #fff;
+}
+.footer{
+    width: 100%;
+}
+.footer p{
+    margin-top: 20px;
+    color: #e3e3e3;
+    font-weight: 100;
+    font-size: 14px;
+}
+.red{
+    color: #fa5559;
+}
+.contactus{
+    padding: 2% 0;
+}
+.contactus i{
+    line-height: 55px;
+    width: 55px;
+    height: 55px;
+    border: 1px solid grey;
+    border-radius: 50%;
+}
+
+#carouselExampleIndicators{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+#carouselExampleIndicators img {
+    width:640px;
+    height:360px;
+    margin: 0 auto;
+  }
+
+
+
+
+@media(max-width:700px){
+    #heading{
+        font-size: 44px;
+    }
+    #hackathon{
+        margin-top: 10px;
+        font-size: 30px;
+    }
+    .overlay i{
+        margin-top: 10px;
+    }
+    #organised{
+        width: 280px;
+        font-size: 17px;
+    }
+    .info h1{
+        font-size: 18px;
+    }
+    .info #clock span{
+        font-size: 22px;
+    }
+    .info h1:first-child{
+        line-height: 28px;
+    }
+    .info #del-countdown{
+        padding: 20% 0 25% 0; 
+        margin-bottom: 35%;
+    }
+    .info #del-countdown h1{
+        font-size: 16px;
+    }
+    #carouselExampleIndicators{
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+    }
+    #carouselExampleIndicators img {
+        width:640px;
+        height:280px;
+        margin: 0 auto;
+      }
+    .contactus .col-md-4{
+        margin-bottom: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* TIMER CSS */
+#del-countdown{
+    background: #282e3a;
+    font-family: tahoma;
+  }
+  #del-countdown h1{
+      color: #fff;
+    text-align: center;
+    font-size: 54px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;    
+  }
+  #del-countdown{
+    width: 100%;
+    margin: 0 auto 0 auto;
+    padding: 5% 0 10% 0;
+  }
+  #clock span{
+    float: left;
+    text-align: center;
+    font-size: 84px;
+    margin: 0 2.5%;
+    color: #fff;
+    padding: 20px;
+    width: 20%;
+    border-radius: 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  #clock span:nth-child(1){
+    background: #fa5559;
+  }
+  #clock span:nth-child(2){
+    background: #26c2b9;
+  }
+  #clock span:nth-child(3){
+    background: #f6bc58;
+  }
+  #clock span:nth-child(4){
+    background: #2dcb74;
+  }
+  #clock:after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  #units span{
+    float: left;
+    width: 25%;
+    text-align: center;
+    margin-top: 30px;
+    color: #ddd;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+  }
+  
+  span.turn{
+    -webkit-animation: turn 0.7s ease forwards;
+            animation: turn 0.7s ease forwards;
+  }
+  
+  #hackathon{
+      transition: 1s ease-in-out;
+  }
+
+  @-webkit-keyframes turn{
+    0%{-webkit-transform: rotateX(0deg);transform: rotateX(0deg)}
+    100%{-webkit-transform: rotateX(360deg);transform: rotateX(360deg)}
+  }
+  
+  @keyframes turn{
+    0%{-webkit-transform: rotateX(0deg);transform: rotateX(0deg)}
+    100%{-webkit-transform: rotateX(360deg);transform: rotateX(360deg)}
+  }
