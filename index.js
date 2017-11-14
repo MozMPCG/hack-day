@@ -37,7 +37,7 @@ function updateTimer(deadline){
       //check for end of timer
       if(timer.total < 1){
         clearInterval(timerInterval);
-        $('#comingsoon').text('BOOOOM ! Event started on 25th November 2017 and will over on 26th November 2017');
+        $('#comingsoon').text('BOOOOM ! Event started on 18th November 2017 and will over on 18th November 2017');
         clock.innerHTML = '<span>0</span><span>0</span><span>0</span><span>0</span>';
       }
   
@@ -64,7 +64,7 @@ function updateTimer(deadline){
 
 
   window.onload = function(){
-    var deadline = new Date("November 25, 2017 12:00:00");
+    var deadline = new Date("November 18, 2017 12:00:00");
     startTimer("clock", deadline);
     interval(textInsert);
   };
